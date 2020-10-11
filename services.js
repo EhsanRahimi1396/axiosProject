@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 const axios = require('axios');
 
 
@@ -25,11 +24,13 @@ console.log(res)
             message: "you send Get request"
             
         })
+    return data ? data.result : null
     })
 
     .catch((error) => {
         console.error(error)
         response.json(" you accepted error")
+        return error ? error.result :null
     })
 
 
@@ -51,12 +52,14 @@ console.log(res)
         response.json({
             message: ' you send Post request'
         })
+        return data ? data.result: null
     })
     .catch((error) => {
         console.log(error)
         response.json({
             message: 'you accepted error'
         })
+        return error ? error.result :null
     })
 
 axios.delete('http://jsonplaceholder.typicode.com/todos?_limit=5')
@@ -79,10 +82,12 @@ console.log(res)
         response.json({
             message: 'you send delete request'
         })
+        return data ?data.result :null
     })
     .catch((error) => {
         console.log(error)
         response.json('you accepted error')
+        return error ? error.result :null
     })
 
 axios.put('http://jsonplaceholder.typicode.com/todos?_limit=5')
@@ -103,10 +108,12 @@ console.log(res)
         response.json({
             message: 'you send put request'
         })
+        return data ? data.result :null
     })
     .catch((error) => {
         console.log(error)
         response.json('you accepted error')
+            return error ? error.result :null
     })
 
 
