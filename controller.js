@@ -1,12 +1,13 @@
 const Services = require('./services')
 module.exports.getinformation = (req, res, next) => {
     try {
-        res.send().json({
-            respons: {
-                status: res.status,
-                data: res.data,
-            }
-        })
+        res.send().json(response)
+       // res.send().json({
+          //  respons: {
+            //    status: res.status,
+              //  data: res.data,
+            //}
+        //})
     }
     catch(err){
         console.log(err)
@@ -17,12 +18,13 @@ module.exports.getinformation = (req, res, next) => {
 
 module.exports.postinformation = (req, res, next) => {
     try {
-        res.send().json({
-            respons: {
-                status: res.status,
-                data: res.data
-            }
-        })
+        res.send().json(response)
+       // res.send().json({
+           // respons: {
+              //  status: res.status,
+               // data: res.data
+           // }
+       // })
     }
     catch (err) {
         console.log(err)
@@ -31,12 +33,13 @@ module.exports.postinformation = (req, res, next) => {
 
 module.exports.deleteinformation = (req, res, next) => {
     try {
-        res.send().json({
-            respons: {
-                status: res.status,
-                data: res.data
-            }
-        })
+        res.send().json(response)
+        //res.send().json({
+          //  respons: {
+               // status: res.status,
+               // data: res.data
+           // }
+      //  })
     }
     catch (err) {
         console.log(err)
@@ -45,12 +48,13 @@ module.exports.deleteinformation = (req, res, next) => {
 
 module.exports.putinformation = (req, res, next) => {
     try {
-        res.send().json({
-            respons: {
-                status: res.status,
-                data: res.data
-            }
-        })
+        res.send().json(response)
+      //  res.send().json({
+        //    respons: {
+          //      status: res.status,
+            //    data: res.data
+            //}
+        //})
 
     }
     catch (err) {
