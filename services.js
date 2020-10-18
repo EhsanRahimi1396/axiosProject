@@ -11,9 +11,7 @@ async function getTodos() {
         console.log(err)
     }
 }
-module.exports = {
-    getTodos
-}
+
 
 async function postTodos() {
     try {
@@ -25,9 +23,7 @@ async function postTodos() {
         console.log(err)
     }
 }
-module.exports = {
-    postTodos
-}
+
 
 async function putTodos() {
     try {
@@ -39,9 +35,7 @@ async function putTodos() {
         console.log(err)
     }
 }
-module.exports = {
-    putTodos
-}
+
  
 async function deleteTodos(){
     try {
@@ -53,8 +47,7 @@ async function deleteTodos(){
         console.log(err)
     }
 }
-module.exports={
-    deleteTodos
+module.exports ={
+    getTodos,postTodos,putTodos,deleteTodos
 }
-
 
