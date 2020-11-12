@@ -15,7 +15,10 @@ async function getTodos() {
 
 async function postTodos() {
     try {
-        const response = await axios.post('http://jsonplaceholder.typicode.com/todos?_limit=5')
+        const response = await axios.post('http://jsonplaceholder.typicode.com/todos?_limit=5',
+    userName: 'Fred',
+    userEmail: 'Flintstone@gmail.com'
+})
         console.log(response);
         return response;
     }
