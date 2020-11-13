@@ -14,12 +14,11 @@ async function getTodos() {
 
 
 async function postTodos() {
-    try {
-        const response = await axios.post('http://jsonplaceholder.typicode.com/todos?_limit=5',
-    userName: 'Fred',
-    userEmail: 'Flintstone@gmail.com'
-})
-        console.log(response);
+   try {
+        const response = await axios.post('/user',{
+        userName: 'Fred',
+        userEmail: 'Flintstone@gmail.com'
+    });
         return response;
     }
     catch (err) {
