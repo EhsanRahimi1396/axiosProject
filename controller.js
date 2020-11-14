@@ -2,7 +2,12 @@ const Services = require('./services')
 module.exports.getinformation = (req, res, next) => {
     try { 
         const response =Services.getTodos
-        res.send().json(response)
+        res.send().json({
+            response:{
+                status:response.status,
+                data:response.data
+            }
+        })
        // res.send().json({
           //  respons: {
             //    status: res.status,
@@ -19,7 +24,12 @@ module.exports.getinformation = (req, res, next) => {
 
 module.exports.postinformation = (req, res, next) => {
     try {
-        res.send().json(response)
+        res.send().json({
+            response:{
+                status:response.status,
+                data:response.data
+            }
+        })
        // res.send().json({
            // respons: {
               //  status: res.status,
@@ -34,7 +44,12 @@ module.exports.postinformation = (req, res, next) => {
 
 module.exports.deleteinformation = (req, res, next) => {
     try {
-        res.send().json(response)
+        res.send().json({
+            response:{
+                status:response.status,
+                data:response.data
+            }
+        })
         //res.send().json({
           //  respons: {
                // status: res.status,
@@ -49,7 +64,12 @@ module.exports.deleteinformation = (req, res, next) => {
 
 module.exports.putinformation = (req, res, next) => {
     try {
-        res.send().json(response)
+        res.send().json({
+            response:{
+                status:response.status,
+                data:response.data
+            }
+        })
       //  res.send().json({
         //    respons: {
           //      status: res.status,
