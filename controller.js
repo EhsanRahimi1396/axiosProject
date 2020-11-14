@@ -1,6 +1,7 @@
 const Services = require('./services')
 module.exports.getinformation = (req, res, next) => {
-    try {
+    try { 
+        const response =Services.getTodos
         res.send().json(response)
        // res.send().json({
           //  respons: {
